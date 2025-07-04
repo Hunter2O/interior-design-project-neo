@@ -1,0 +1,197 @@
+.livingroom-container {
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.livingroom-container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.livingroom-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.livingroom-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 260px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.livingroom-card:hover {
+  transform: translateY(-5px);
+}
+
+.livingroom-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.livingroom-card h4 {
+  font-size: 18px;
+  color: #444;
+  margin: 0.5rem 0;
+}
+
+.livingroom-card p {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.livingroom-card button {
+  background-color: #28a745;
+  color: white;
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.livingroom-card button:hover {
+  background-color: #218838;
+}
+
+/* Toggle button for sub-items */
+.dropdown-toggle {
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dropdown-toggle:hover {
+  background-color: #0056b3;
+}
+
+/* Sub-items (expandable group) */
+.subitem-dropdown {
+  margin-top: 10px;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.subitem-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+  flex-wrap: wrap;
+}
+
+.subitem-row span {
+  flex: 1;
+  color: #333;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 12px;
+}
+
+.quantity-controls button {
+  padding: 4px 8px;
+  font-size: 14px;
+  background-color: #ddd;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.quantity-controls button:hover {
+  background-color: #ccc;
+}
+
+.quantity-controls span {
+  width: 20px;
+  text-align: center;
+}
+
+/* Sub-item Add button */
+.subitem-row button:last-child {
+  background-color: #17a2b8;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.subitem-row button:last-child:hover {
+  background-color: #138496;
+}
+
+/* Modal styling */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.modal-content img {
+  max-width: 100%;
+  max-height: 80vh;
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  color: #888;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.close-modal:hover {
+  color: #444;
+}
+

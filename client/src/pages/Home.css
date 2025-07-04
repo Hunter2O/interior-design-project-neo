@@ -1,0 +1,193 @@
+/* Reset margin/padding for full-screen layout */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Full wrapper including background */
+.home-wrapper {
+  position: relative;
+  min-height: calc(100vh - 120px);
+  overflow: hidden;
+}
+
+/* Background image behind main content */
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.5s ease, background-image 0.5s ease;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Foreground content above image */
+.home-container {
+  position: relative;
+  padding: 2rem;
+  z-index: 1;
+}
+
+/* Room grid */
+.room-grid {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+/* Room card with cleaner framed look */
+.room-card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  width: 260px;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.room-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+}
+
+.room-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.room-card span {
+  display: block;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+
+/* Section below room grid */
+.info-scroll-section {
+  margin-top: 2rem;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Scroll buttons */
+.scroll-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.scroll-btn {
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #e0f0f9;
+  color: #007bff;
+  transition: background-color 0.3s;
+  font-weight: 500;
+}
+
+.scroll-btn.active,
+.scroll-btn:hover {
+  background-color: #00bcd4;
+  color: white;
+}
+
+/* Section content */
+.hover-content p {
+  text-align: center;
+  font-size: 16px;
+  color: #444;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+/* Signup section */
+.signup-section {
+  background: rgba(255, 255, 255, 0.92);
+  margin-top: 2rem;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.signup-section h3 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.signup-section p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.signup-form input,
+.signup-form textarea {
+  padding: 0.6rem 1rem;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.signup-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.signup-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-form button:hover {
+  background-color: #0056b3;
+}
+
+.success-message {
+  color: green;
+  margin-top: 0.5rem;
+  font-size: 14px;
+}
+
